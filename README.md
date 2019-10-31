@@ -4,7 +4,7 @@ Angular 6 Vidyo.io basic sample
 
 ## Setup
 
-1.	Clone: git clone https://github.com/Vidyo/vidyo.io-groupchat-angular.git
+1.	Clone: git clone https://github.com/Vidyo/vidyo.io-connector-angular.git
 2.	Install latest node js.
 Download Link: https://nodejs.org/en/download/
 3.	Open the Windows Command Prompt/, PowerShell or a similar command line tool (for Mac use Terminal)
