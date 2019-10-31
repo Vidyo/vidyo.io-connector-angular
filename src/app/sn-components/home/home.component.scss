@@ -1,0 +1,106 @@
+
+ .container {
+   height: 100%;
+   width: 100%;
+   max-width: 100%;
+   position: relative;
+   z-index: 1;
+   display: flex;
+   padding: 0;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+ }
+ 
+ .box-wrapper {
+   background: #ffffff;
+ }
+ 
+ /* chat and user listing page */
+ .chat-main-container {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: stretch;
+ }
+
+ .chat-main-container .chat {
+   flex-grow: 1;
+   background: #f4f4f4;
+ }
+ 
+ .chat-main-container .chat header {
+   background: rgb(19, 38, 58);
+   height: 70px;
+   color: #fff;
+   padding: 22px 22px;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .chat-main-container .chat header .header-text span {
+   display: block;
+   font-size: .78em;
+   font-weight: normal;
+   opacity: .8;
+ }
+
+ /* video chat box */
+ .video-chat-box {
+   height: calc(100% - 65px);
+   overflow: hidden;
+   display: flex;
+   background: #eaeaea;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: relative;
+ }
+ 
+ .video-section {
+   height: 100%;
+   width: 100%;
+   overflow: auto;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .video-chat-controls {
+   position: absolute;
+   bottom: 60px;
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .video-chat-controls a {
+   display: inline-block;
+   width: 52px;
+   height: 52px;
+   max-width: 100%;
+   max-height: 100%;
+   margin-right: 12px;
+   border-radius: 50%;
+   background: url('assets/images/videochat-icon.png');
+   box-shadow: 0 0 5px 3px rgba(0, 0, 0, .3);
+ }
+ 
+ .video-chat-controls a.video.mute {
+    background-position: 0px -80px;
+  }
+  
+  .video-chat-controls a.voice {
+    background-position: -67px 0;
+  }
+  
+  .video-chat-controls a.voice.mute {
+    background-position: -67px -80px;
+  }
+ 
+ .video-chat-controls a.disconnect {
+   background-position: -131px -80px;
+ }
+ 
+ .video-chat-controls a.connect {
+   background-position: -131px 0;
+ }

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="box-wrapper chat-main-container">
+
+    <div class="chat">
+
+      <header>
+        <div class="header-text"><span>Name</span>{{userName}}</div>
+        <div class="header-text"><span>Status</span>{{connectionStatus}}</div>
+      </header>
+
+      <div class="video-chat-box" id="video-call-start" style="display: none">
+        <div class="start-video-chat"></div>
+      </div>
+
+      <div class="video-chat-box">
+        <div class="video-section" id="connected-video-chat"></div>
+
+        <div class="video-chat-controls">
+          <a href="#" [class.mute]="cameraPrivacy" class="video" (click)="togglePreview()"></a>
+          <a href="#" [class.mute]="microphonePrivacy" class="voice" (click)="toggleMic()"></a>
+          <a href="#" [ngClass]="{
+            'connect' : !connected,
+            'disconnect' : connected
+          }" (click)="toggleConnect()"></a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
