@@ -28,7 +28,7 @@
     "btoa": "^1.2.1",
     "command-line-args": "^5.1.1",
     "core-js": "2.5.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jssha": "^2.3.1",
     "ngx-modal-dialog": "^3.0.0",
     "popper.js": "^1.16.0",
